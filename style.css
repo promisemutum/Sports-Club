@@ -3,7 +3,7 @@
     padding: 0;
     font-family: 'Exo', sans-serif;
 }
-.back{
+body{
     min-height: 100vh;
     width: 100%;
     background-color: black;
@@ -99,14 +99,7 @@ nav{
   animation-name: fade;
   animation-duration: 1.5s;
 }
-@-webkit-keyframes fade {
-  from {opacity: 0.8}
-  to {opacity: 1}
-}
-@keyframes fade {
-  from {opacity: 0.8}
-  to {opacity: 1}
-}
+
 .txt{
 	position: absolute;
 	color: #fff;
@@ -120,14 +113,7 @@ nav{
   	animation-duration: 2s;
 	z-index: 1;
 }
-@-webkit-keyframes posi {
-  from {left: 25%;}
-  to {left: 15%;}
-}
-@keyframes posi {
-  from {left: 25%;}
-  to {left: 15%;}
-}
+
 .txt h1{
 	color: #b99e00; 
 	font-size: 50px;
@@ -143,6 +129,102 @@ nav{
   	-webkit-animation-duration: 40s;
   	animation-name: zoomin;
   	animation-duration: 40s;
+}
+
+.menu .box-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	gap: 1.5rem;
+}
+.menu .box-container .box{
+	padding: 4rem;
+	text-align: center;
+	border: medium solid #b99e00;
+}
+.menu .box-container .box img{
+	height: 14rem;
+	width: 20rem;
+}
+.menu h1, .about h1{
+	color: #b99e00;
+	text-align: center;
+	font-size: larger;
+}
+.menu .box-container .box h3{
+	color: #b99e00;
+}
+.button{
+	display: inline-flex;
+	height: 40px;
+	padding: 0;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	outline: none;
+	border-radius: 5px;
+	overflow: hidden;
+	font-size: 16px;
+	font-weight: 500;
+	background: #36454F;
+	border: none;
+	cursor: pointer;
+
+}
+.button-text,.button-icon{
+	color: #b99e00;
+	display: inline-flex;
+	align-items: center;
+	padding:0 2px;
+	height: 100%;
+}
+.button-icon{
+	font-size: 1.5em;
+}
+.button:hover{
+	background: rgb(181, 181, 181);
+}
+.button:active{
+	background: grey;
+}
+.click{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.click p{
+	color: white;
+	margin-top: 8px;
+}
+.mid{
+	color: white;
+}
+.about{
+	margin-top: 20px;
+}
+.info{
+	color: white;
+	padding-left: 160px;
+	padding-right: 160px;
+	padding-top: 20px;
+}
+footer{
+	background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+@-webkit-keyframes fade {
+	from {opacity: 0.8}
+	to {opacity: 1}
+  }
+  @keyframes fade {
+	from {opacity: 0.8}
+	to {opacity: 1}
+}
+@-webkit-keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+@keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
 }
 @-webkit-keyframes zoomin {
   from {transform: scale(1, 1);}
@@ -193,73 +275,4 @@ nav{
 	.sign a{
 		font-size: 12px;
 	}
-}
-.menu .box-container{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-	gap: 1.5rem;
-}
-.menu .box-container .box{
-	padding: 4rem;
-	text-align: center;
-	border: medium solid #b99e00;
-}
-.menu .box-container .box img{
-	height: 14rem;
-	width: 20rem;
-}
-.menu h1, .about h1{
-	color: #b99e00;
-	text-align: center;
-	font-size: larger;
-}
-.menu .box-container .box h3{
-	color: #b99e00;
-}
-.button{
-	display: inline-flex;
-	height: 40px;
-	padding: 0;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	outline: none;
-	border-radius: 5px;
-	overflow: hidden;
-	font-size: 16px;
-	font-weight: 500;
-	background: #36454F;
-	border: none;
-	cursor: pointer;
-
-}
-.button-text,.button-icon{
-	color: #b99e00;
-	display: inline-flex;
-	align-items: center;
-	padding:0 2px;
-	height: 100%;
-}
-.button-icon{
-	font-size: 1.5em;
-}
-.button:hover{
-	background: #28282B;
-}
-.button:active{
-	background: #1B1212;
-}
-.click{
-	text-align: center;
-	margin-bottom: 20px;
-}
-.mid{
-	color: white;
-}
-.about{
-	margin-top: 20px;
-}
-.info{
-	color: white;
-	padding-left: 160px;
-	padding-right: 160px;
-	padding-top: 20px;
 }
